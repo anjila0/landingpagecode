@@ -1,0 +1,234 @@
+.root{
+
+    @font-face {
+        font-family: 'architype_rennerdemi';
+        src: url('fonts1/webfontkit-20230220-064641/archityperenner-demi-webfont') format('woff2'),
+             url('fonts1/webfontkit-20230220-064641/archityperenner-demi-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    
+    }
+
+}
+@font-face {
+    font-family: 'architype_rennermedium';
+    src: url('archityperenner-medium-webfont.woff2') format('woff2'),
+         url('archityperenner-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'tw_cen_classified_mt_stdRg';
+    src: url('twcenclassmtstd-regular-webfont.woff2') format('woff2'),
+         url('twcenclassmtstd-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+}
+
+/* colour setup */
+:root{
+ --primary: #038154;
+ --primary-dark:#047750;
+ --primary-light:#70B09A;
+ --white: #ffffff;
+ --yellow: #FEF661;
+ --black: #383C3B;
+}
+.navbar-brand span{
+    color:#038154;
+    position:relative;
+    font-size:30px;
+    text-decoration:none;
+    text-transform:ca;
+    font-weight:800;
+    letter-spacing: 1px;
+}
+.nav-item span{
+    color:#047750;
+}
+/* .navbar-brand{ 
+    background-image: url(image/bgimg.jpg);
+    position:relative;
+    font-size:30px;
+    text-decoration:none;
+    text-transform:capitalize;
+    font-weight:800;
+    letter-spacing: 1px;
+
+    width: 150px;
+    height: 50px;
+    left: 0px;
+    top: 0px; 
+} */
+
+.lp-navigation-bar img{
+    position:absolute;
+    z-index: -1;
+    left:0;
+    top:0;
+}
+.lp-navigation-bar .navbar h2{
+    font-family: 'Architype Renner';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 31px;
+    line-height: 37px;
+    color: var(--black);  
+}
+.nav-item{
+    color: #0000;
+    background: #ffff;
+    text-decoration:none;
+    font-weight: 500;
+    letter-spacing:o;
+    padding: 2px 5px;
+}
+
+h1,h2,h3{
+    font-family:'architype_rennerdemi';
+}
+
+.st-item i{
+    display: block;
+    text-align: center;
+}
+/*Banner-section start========================================================= */
+    .banner-title{
+        color: var(--dark-green);
+        margin-top:7.5em;
+    }
+    .inktelligent  h1{
+        font-size: 45px;
+        line-height: 60px;
+        font-weight: bolder;
+        font-family: 'architype_rennerdemi';
+    }
+    .inktelligent h3{
+        color:#038154;
+        margin:top;
+        padding:20px;
+        font-family: 'architype_rennerdemi';
+    }
+    .inktelligent p{
+        font-size: 12px;
+        font-weight:500;
+        font-family:'tw_cen_classified_mt_stdRg';
+    }
+    .button{
+        background-color: var(--dark-green);
+        color: white;
+        width: 11.25em;
+        height: 3.25em;
+        border-radius:10px;
+        text-align: center;
+    }
+    .button-first{
+        display: flex;
+    }
+    .learn-more-button{
+        background-color: #038154;
+        color:#ffffff;
+    }
+    .future h5{
+        font-family: 'architype_rennerdemi';
+
+    }
+    .future p{
+        font-family:'tw_cen_classified_mt_stdRg';
+    }
+    .build h5{
+       font-family:'architype_rennerdemi';
+    }
+    .build p{
+        font-family:'tw_cen_classified_mt_stdRg';  
+       
+    }
+    .horizontal-line-1{
+        margin-top: 4em;
+        border-top: 2px solid var(--dark-green);
+    }
+    .horizontal-line-1 h5,.horizontal-line-2 h5{
+        padding-top: 2em;
+        color: var(--dark-green);
+        font-family: 'tw_bold';
+        font-size:medium;
+        font-weight: 100;
+        border-top: 2px solid  #038154;
+    }
+    .horizontal-line-2{
+        margin-top: 4em;
+        border-top: 2px solid var(--dark-green);
+        
+    }
+    .horizontal-line-1 p, .horizontal-line-2 p{
+        font-family: 'tw_medium';
+        color: var(--light-black);
+        font-size:medium ;
+        font-weight: 300;
+    }
+/*Call-to-action-section start========================================================= */
+   .call-to-action{
+    background-color:#03724D;
+    position:relative;
+       
+       
+   }
+    .aboutus{
+        padding:100px o;
+        text-align:center;
+        
+    }
+    .aboutus h3{
+         font-family:'architype_renner_medium';
+         text-align: center;
+         color:#ffffff;
+         margin:5px;
+         padding:20px;
+         font-style: normal;
+         font-weight: 600;
+         font-size: 28px;
+         line-height: 34px;
+         color: rgba(255, 255, 255, 0.73);
+    }
+    .aboutus .para1{
+        font-family: 'architype_renner_medium';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 38px;
+        color: #FFFFFF;
+    }
+    .aboutus .para2{
+        font-family: 'tw_cen_classified_mt_stdRg';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 17px;
+        color: #FFFFFF;
+    }
+.call-to-action .img1{
+position:absolute;
+left:0;
+width:50px;
+}
+.call-to-action .img2{
+    position:absolute;
+    right:0;
+    width:50px;
+    bottom:0;
+    }
+    .green{
+        color:#03724D;
+    }
+    .packages{
+        margin:60px 0 60px 0 ;
+
+    }
+    .bold{
+        font-weight:600;
+        font-family:'architype_renner_medium';
+        
+    }
