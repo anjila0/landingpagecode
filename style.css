@@ -149,7 +149,7 @@ h3 {
   font-family: "tw_cen_Rg";
 }
 .button {
-  background-color: var(--dark-green);
+  background-color: var(--primary-dark);
   color: white;
   width: 11.25em;
   height: 3.25em;
@@ -165,6 +165,7 @@ h3 {
   border-radius: 10px;
   block-size: 40px;
   border: none;
+  margin: 0 0 20px 0;
 }
 .future h5 {
   font-family: "architype_demi";
@@ -274,6 +275,7 @@ h3 {
 /* package section started here========================================*/
 .package {
   position: relative;
+  padding: 100px 0;
 }
 .package-paragraph span {
   color: #038154;
@@ -300,7 +302,7 @@ h3 {
 .firstPackage:hover .btn-get-started,
 .secondPackage:hover .btn-get-started {
   background-color: white;
-  color: var(--dark-green);
+  color: var(--primary-dark);
 }
 
 /* for the light bulb icon ============== */
@@ -310,8 +312,7 @@ h3 {
   border-radius: 35%;
   padding: 5px 12px 12px 12px;
 }
-.firstPackage {
-  margin-top: 125px;
+.package .firstPackage {
   box-shadow: 4px 3px 13px 0px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 4px 3px 13px 0px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 4px 3px 13px 0px rgba(0, 0, 0, 0.4);
@@ -361,14 +362,14 @@ h3 {
   font-weight: 600;
   border: none;
 }
-.secondPackage {
+.package .secondPackage {
   background-color: white;
-  margin-top: 150px;
+  margin-top: 50px;
   border-radius: 5%;
   padding: 20px;
   font-family: "tw_cen_Rg";
   font-size: 15px;
-  font-weight: 400px;
+  font-weight: 400;
   color: grey;
 }
 .secondPackage h2 {
@@ -400,6 +401,7 @@ h3 {
 }
 
 /* About us section started */
+
 .about-us {
   padding: 5px;
   margin-top: 50px;
@@ -442,24 +444,48 @@ h3 {
 
   color: rgba(0, 0, 0, 0.8);
 }
-.pb-4 {
+.lp-card {
   padding: 2px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-bottom: gray;
   border-radius: 20px;
 }
-.pb-4 img {
-  align-items: center;
-}
-.pb-5 {
-  margin-top: 10px;
-  padding: 3px;
-  border: gray;
-  border-width: 8px;
+.lp-card1 {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(56, 60, 59, 0.1);
   border-radius: 20px;
+  margin: 9px;
 }
-.pb-5 img {
+.qr-content {
+  text-align: left;
+  padding: 10px;
+  margin: 5px;
+}
+
+.trading-content {
+  text-align: left;
+  padding: 10px;
+  margin: 5px;
+}
+.credit-card-content {
+  text-align: left;
+  padding: 10px;
+  margin: 5px;
+}
+.lp-card img {
   align-items: center;
+}
+.lp-card1 img {
+  align-items: center;
+}
+.qr-payment {
+  padding: 5px;
+}
+.trading {
+  padding: 5px;
+}
+.credit-card {
+  padding: 5px;
 }
 .about-us i {
   padding-right: 2em;
@@ -467,12 +493,294 @@ h3 {
   justify-content: center;
   display: flex;
 }
+.abo {
+  margin: 22px;
+  padding: 20px;
+}
 
 /* Featured Product Section */
 
-/* .about-us i {
-  padding-right: 2em;
-  align-items: center;
-  justify-content: center;
-  display: flex;
+.flex {
+  background-color: #038154;
+}
+
+.lp-products {
+  margin-top: 9em;
+}
+.lp-products h3 {
+  color: #038154;
+}
+.lp-products p {
+  color: black;
+}
+.lp-products h2 {
+  font-size: 38px;
+  font-weight: 900;
+}
+.lp-featured-products {
+  margin-top: 80px;
+}
+.lp-featured-products p {
+  font-family: architype_regular;
+  font-weight: 500;
+}
+.lp-featured-products .read-more {
+  color: #038154;
+  font-size: 22px;
+  font-family: tw_bold;
+}
+.lp-featured-products i {
+  color: #038154;
+}
+.carousel-cards {
+  width: 18rem;
+  border-radius: 50px;
+}
+.carousel-cards img {
+  border-radius: 50px;
+  padding: 8px;
+  width: 285px;
+  height: 200px;
+}
+.slick-prev:before {
+  color: white !important;
+  content: "\f178";
+  font-family: "fontawesome" !important;
+  background-color: #03724d;
+  padding: 12px;
+  border-radius: 10px;
+}
+.slick-next:before {
+  color: #038154 !important;
+  content: "\f178";
+  font-family: "fontawesome" !important;
+  border: 2px solid #f6f6f5 !important;
+  font-size: 20px !important;
+  padding: 12px;
+  border-radius: 10px;
+}
+.slick-next {
+  left: 16px !important;
+}
+
+/* testimonial section  */
+
+.lp-testimonial {
+  margin-top: 200px;
+}
+.lp-testimonial h4 {
+  text-align: center;
+  color: #038154;
+  left: 100px;
+}
+.lp-testimonial h2 {
+  text-align: center;
+  margin-inline-start: 400px;
+  font-size: 42px;
+}
+.testimonial-content {
+  background-color: #038154;
+  border-radius: 35px;
+}
+.testimonial-content .slick-list {
+  overflow: visible;
+  overflow-x: clip;
+}
+.testimonial-content p {
+  margin-top: 30px;
+  color: white;
+  font-family: architype_regular;
+  font-style: italic;
+  word-spacing: 2px;
+  font-size: 20px;
+}
+.testimonial-content i {
+  color: #fef661;
+}
+.testimonial-ratings {
+  margin-top: 50px;
+}
+ul.slick-dots li button::before {
+  font-size: 20px;
+}
+.testimonial-content h3 {
+  color: white;
+  margin-top: 50px;
+}
+.testimonial-content h5 {
+  color: white;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+.testimonial-content img {
+  margin-top: -150px;
+  position: relative;
+  z-index: 100;
+
+  left: 0;
+  overflow: visible !important;
+}
+.slick-prev:before {
+  margin-left: -30px;
+  opacity: 1 !important;
+}
+/* FAQS section */
+.FAQS {
+  margin-top: 120px;
+  margin-left: 120px;
+}
+.accordion.fq-accordion .fq-item {
+  border: 2px solid var(--primary-dark);
+  border-radius: 25px;
+  padding: 10px 12px;
+  margin: 10px 100px;
+}
+.accordion.fq-accordion .accordion-button:not(.collapsed) {
+  color: var(--primary-dark);
+  background-color: transparent;
+  box-shadow: none;
+}
+.accordion .accordion-item .accordion-button::after {
+  background-image: none;
+  content: "icofont-plus-circle";
+  font-family: bootstrap-icons;
+  font-size: 20px;
+}
+
+.accordion.fq-accordion .accordion-button:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+.accordion-header {
+  position: relative;
+  padding: 10px 0;
+  font-size: 30px;
+  color: var(--primary-dark);
+  cursor: pointer;
+  font-family: "tw_cen_mt_stdbold";
+}
+.accordion-body {
+  position: relative;
+  background: white;
+  height: 0;
+  font-size: 16px;
+  text-align: justify;
+  width: 600px;
+  overflow: hidden;
+  font-family: "tw_cen_mt_stdbold";
+  font-weight: lighter;
+}
+
+/* .accordion-item {
+  width: 800px;
+  margin: 90px auto;
+  color: black;
+  background-color: white;
+  padding: 45px 45px;
+}
+.accordion-item {
+  position: relative;
+  margin: 30px;
 } */
+
+/* Positions the labels relative to the .container. Adds padding to the top and bottom and increases font size. Also makes its cursor a pointer */
+
+/* .accordion .label {
+  position: relative;
+  padding: 10px 0;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+  font-family: "tw_cen_mt_stdbold";
+  font-size: 20px;
+} */
+/* .accordion .accordion-item .accordion-header .accordion-button::after {
+  background-image: none;
+  content: "icofont-plus-circle";
+
+  font-family: "bootstrap-icons";
+  color: var(--primary-dark);
+  float: right;
+  font-size: 30px;
+} */
+
+/* Hides the content (height: 0), decreases font size, justifies text and adds transition */
+
+/* .accordion .content {
+  position: relative;
+  background: white;
+  height: 0;
+  font-size: 16px;
+  text-align: justify;
+  width: 600px;
+  overflow: hidden;
+  transition: 0.5s;
+  font-family: "tw_cen_mt_stdbold";
+  font-weight: lighter;
+} */
+
+/* unhides the content part when active.sets the height */
+/* .accordion .container.active .content {
+  height: auto;
+} */
+
+/* Changes from plus sign to negative sign once active */
+
+/* .accordion .container.active .label::before {
+  content: "bi-dash-circle";
+  color: var(--primary-dark);
+  font-family: "bootstrap-icons";
+  font-size: 30px;
+  margin-top: 10px;
+  transform: translateY(-50%);
+}
+.accordion .container.active .label {
+  color: var(--primary-dark);
+} */
+
+/* Footer section started here */
+
+.footer-services {
+  display: flex;
+}
+.footer-content h2 span {
+  color: var(--primary-dark);
+}
+.footer-content ul li a {
+  text-decoration: underline;
+  color: black;
+}
+.footer-content ul li {
+  list-style-type: none;
+  font-size: 12px;
+  font-family: "architype_regular";
+  font-weight: 700;
+}
+.footer-content ul li a:hover {
+  color: var(--primary-dark);
+}
+.footer-below {
+  border-top: 2px solid var(--primary-dark);
+}
+.footer-below ul {
+  display: flex;
+  column-gap: 20px;
+  width: fit-content;
+  margin-top: 15px;
+  padding-left: 0;
+}
+.social-media-links {
+  display: flex;
+}
+.social-media-links ul li a {
+  color: var(--primary-dark);
+}
+.social-media-links a:hover {
+  color: var(--primary-dark);
+}
+.social-media-links a {
+  column-gap: 20px;
+}
+.social-media-links ul li {
+  list-style-type: none;
+}

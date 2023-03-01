@@ -1,348 +1,674 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Landing Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
-  </head>
-  <body>
-    <!-- Navbar Section -->
-    <section class="lp-navigation-bar">
-      <nav class="navbar navbar-expand-lg navbar-light ">
-        <div class="container">
-          <img src="image/bgimg.jpg" alt="bg">
-          <h2 class="navbar-brand" href="#">Smar <span class="smarTech">Tech.</span>
-          </h2>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Landing Page</title>
+   <link rel="stylesheet" href="style.css">
+
+    
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+   
+    <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css"> 
+ 
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  
+  
+ 
+  <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css" /> 
+   <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css" />  
+  
+  
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> 
+  
+
+</head>
+
+<body>
+  <!-- Navbar Section -->
+  <section class="lp-navigation-bar">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container">
+        <img src="image/bgimg.jpg" alt="bg">
+        <h2 class="navbar-brand" href="#">Smar <span class="smarTech">Tech.</span>
+        </h2>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="lp-navigation collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item st-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                <span>Applications</span>
+                <i class="bi bi-dot"></i>
+              </a>
+            </li>
+            <li class="nav-item st-item">
+              <a class="nav-link" href="#">Chemistry</a>
+            </li>
+            <li class="nav-item st-item">
+              <a class="nav-link" href="#">Technology</a>
+            </li>
+            <li class="nav-item st-item">
+              <a class="nav-link" href="#">Chemistry</a>
+            </li>
+            <li class="nav-item st-item">
+              <a class="nav-link" href="#">Products</a>
+            </li>
+            <li class="nav-item st-item">
+              <a class="nav-link" href="#">Careers</a>
+            </li>
+            <li class="nav-item st-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!-- Banner Section -->
+  <section class="banner">
+    <div class="container">
+      <div class="row">
+        <div class="inktelligent col-md-6">
+          <h3>
+            <span>Inktelligent</span>
+          </h3>
+          <h1>The mini-LED is an evolutionary technology for LCD TVs</h1>
+          <p>Measuring around 0.1 millimeter, mini-LEDs are less intricate than micro-LEDs(0.01 millimiter) but are much
+            more affordable and easiest to manufacture in bulk. As a transitional technology for manufacutres. of LCD
+            TVs, mini-LEDs have already seen traction in the market.</p>
+          <button type="button" class="learn-more-button">Learn More <i
+              class="learn-more-button-chevron bi bi-chevron-right"></i>
           </button>
-          <div class="lp-navigation collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item st-item">
-                <a class="nav-link active" aria-current="page" href="#">
-                  <span>Applications</span>
-                  <i class="bi bi-dot"></i>
-                </a>
-              </li>
-              <li class="nav-item st-item">
-                <a class="nav-link" href="#">Chemistry</a>
-              </li>
-              <li class="nav-item st-item">
-                <a class="nav-link" href="#">Technology</a>
-              </li>
-              <li class="nav-item st-item">
-                <a class="nav-link" href="#">Chemistry</a>
-              </li>
-              <li class="nav-item st-item">
-                <a class="nav-link" href="#">Products</a>
-              </li>
-              <li class="nav-item st-item">
-                <a class="nav-link" href="#">Careers</a>
-              </li>
-              <li class="nav-item st-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
+          <div class="row">
+            <div class="col-md-4 horizontal-line-1">
+              <h5>
+                <span>Future is now</span>
+              </h5>
+              <p>Today Web UI kit</p>
+            </div>
+            <div class="col-md-8 horizontal-line-2">
+              <h5>
+                <span>Build your website</span>
+              </h5>
+              <p>A lot of components</p>
+            </div>
           </div>
         </div>
-      </nav>
-    </section>
-    <!-- Banner Section -->
-    <section class="banner">
-      <div class="container">
-        <div class="row">
-          <div class="inktelligent col-md-6">
-            <h3>
-              <span>Inktelligent</span>
-            </h3>
-            <h1>The mini-LED is an evolutionary technology for LCD TVs</h1>
-            <p>Measuring around 0.1 millimeter, mini-LEDs are less intricate than micro-LEDs(0.01 millimiter) but are much more affordable and easiest to manufacture in bulk. As a transitional technology for manufacutres. of LCD TVs, mini-LEDs have already seen traction in the market.</p>
-            <button type="button" class="learn-more-button">Learn More <i class="learn-more-button-chevron bi bi-chevron-right"></i>
+        <div class="col-md-6">
+          <img src="image/banner.jpg" alt="Banner Image">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Call to Action Section -->
+  <section class="call-to-action">
+    <div class="container">
+      <img class="img1" src="image/Screenshot_27.jpg" alt="bg">
+      <div class="row">
+        <div class="aboutus">
+          <h3>Learn About Us</h3>
+          <p class="para1">What problem we are here to solve ipsum dolor sit amet, consectetur adipiscing elit.Aliqum
+            risus scolerisque condimentum.</p>
+          <p class="para2"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias iusto harum, voluptate
+            dolorum corrupti dicta modi doloremque temporibus magnam dolore deserunt, qui tenetur commodi sed facere.
+            Quam nam aliquid alias!</p>
+        </div>
+      </div>
+      <img class="img2" src="image/Screenshot_30.jpg" alt="bg">
+    </div>
+  </section>
+  <!-- Package Section -->
+  <section class="package">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-4 package-paragraph">
+          <h2>We make inktelligent ink enabling OLED performace from <span> LCD infrastructure <i
+                class="bi bi-arrow-right"></i>
+            </span>
+          </h2>
+          <div class="package-section-bg">
+            <img src="image/Screenshot_31.jpg" alt="package-bg">
+          </div>
+        </div>
+        <div class="col-3 firstPackage">
+          <i class="lightBulb bi bi-lightbulb fa-2x "></i>
+          <h2>Smart Package</h2>
+          <p>Today is super powerful UI kit with hundreds of amazing designed components in Adobe Photoshop & Sketch
+            App.</p>
+          <h3>
+            <span>$</span>17.95/ <span>month</span>
+          </h3>
+          <div class="button-second-getStarted pt-4 ">
+            <button type="button" class="btn-get-started">Get Started <i class="get-started bi bi-chevron-right"></i>
             </button>
-            <div class="row">
-              <div class="col-md-4 horizontal-line-1">
-                <h5>
-                  <span>Future is now</span>
-                </h5>
-                <p>Today Web UI kit</p>
-              </div>
-              <div class="col-md-8 horizontal-line-2">
-                <h5>
-                  <span>Build your website</span>
-                </h5>
-                <p>A lot of components</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <img src="image/banner.jpg" alt="Banner Image">
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Call to Action Section -->
-    <section class="call-to-action">
-      <div class="container">
-        <img class="img1" src="image/Screenshot_27.jpg" alt="bg">
-        <div class="row">
-          <div class="aboutus">
-            <h3>Learn About Us</h3>
-            <p class="para1">What problem we are here to solve ipsum dolor sit amet, consectetur adipiscing elit.Aliqum risus scolerisque condimentum.</p>
-            <p class="para2"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias iusto harum, voluptate dolorum corrupti dicta modi doloremque temporibus magnam dolore deserunt, qui tenetur commodi sed facere. Quam nam aliquid alias!</p>
-          </div>
-        </div>
-        <img class="img2" src="image/Screenshot_30.jpg" alt="bg">
-      </div>
-    </section>
-    <!-- Package Section -->
-    <section class="package">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-4 package-paragraph">
-            <h2>We make inktelligent ink enabling OLED performace from <span> LCD infrastructure <i class="bi bi-arrow-right"></i>
+        <div class="col-3 secondPackage">
+          <i class="diamond bi bi-gem fa-2x "></i>
+          <h2>Premium Package</h2>
+          <p>Today is super powerful UI kit with hundreds of amazing designed components in Adobe Photoshop & Sketch
+            App.</p>
+          <h3>
+            <span>$</span>17.95/ <span>month</span>
+          </h3>
+          <div class="button-first-getStarted pt-4 ">
+            <button type="button" class="btn-get-started">
+              <span>Get Started <i class="get-started-bi bi-chevron-right"></i>
               </span>
-            </h2>
-            <div class="package-section-bg">
-              <img src="image/Screenshot_31.jpg" alt="package-bg">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Us Section -->
+  <section class="about-us">
+    <div class="container">
+      <h3>
+        <span>Learn About Us</span>
+      </h3>
+      <h3> we help your business more growth</h3>
+      <p>Our mission is to help your business grow, <span>especially financially, you can consult anytime.</span>
+      </p>
+    </div>
+    <div class="container">
+      <div class="row abo">
+        <div class=" col-md-4 repo">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="image/Screenshot_32.jpg">
+            </div>
+            <div class="col-md-7">
+              <h3>Monthly Report</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
             </div>
           </div>
-          <div class="col-3 firstPackage">
-            <i class="lightBulb bi bi-lightbulb fa-2x "></i>
-            <h2>Smart Package</h2>
-            <p>Today is super powerful UI kit with hundreds of amazing designed components in Adobe Photoshop & Sketch App.</p>
-            <h3>
-              <span>$</span>17.95/ <span>month</span>
-            </h3>
-            <div class="button-second-getStarted pt-4 ">
-              <button type="button" class="btn-get-started">Get Started <i class="get-started bi bi-chevron-right"></i>
-              </button>
+        </div>
+        <div class=" col-md-4 serv">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="image/Screenshot_33.jpg">
+            </div>
+            <div class="col-md-7">
+              <h3>24/7 customer service</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
             </div>
           </div>
-          <div class="col-3 secondPackage">
-            <i class=" diamond bi bi-gem fa-2x "></i>
-            <h2>Premium Package</h2>
-            <p>Today is super powerful UI kit with hundreds of amazing designed components in Adobe Photoshop & Sketch App.</p>
-            <h3>
-              <span>$</span>17.95/ <span>month</span>
-            </h3>
-            <div class="button-first-getStarted pt-4 ">
-              <button type="button" class="btn-get-started">
-                <span>Get Started <i class="get-started-bi bi-chevron-right"></i>
-                </span>
-              </button>
+        </div>
+        <div class=" col-md-4 plan">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="image/Screenshot_34.jpg">
+            </div>
+            <div class="col-md-7">
+              <h3>Planning consulation</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- About Us Section -->
-    <section class="about-us">
-      <div class="container">
-        <h3>
-          <span>Learn About Us</span>
-        </h3>
-        <h3> we help your business more growth</h3>
-        <p>Our mission is to help your business grow, <span>especially financially, you can consult anytime.</span>
-        </p>
+    </div>
+    </div>
+    <div class="container lp-more-services ">
+      <div class="row">
+        <div class="col-5 ">
+          <div class="d-flex lp-card">
+            <div class=" qr-payment">
+              <img src="image/Screenshot_36.jpg" alt="qr-payment">
+            </div>
+            <div class=" qr-content">
+              <h3>QR Payment</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
+            </div>
+            <i class="bi bi-chevron-right"></i>
+          </div>
+          <div class="d-flex lp-card1">
+            <div class=" trading ">
+              <img src="image/Screenshot_37.jpg" alt="trading">
+            </div>
+            <div class="trading-content ">
+              <h3>Trading Portal</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
+            </div>
+            <i class="bi bi-chevron-right"></i>
+          </div>
+          <div class="d-flex lp-card1">
+            <div class="credit-card">
+              <img src="image/Screenshot_38.jpg" alt="virtual credit card">
+            </div>
+            <div class="credit-card-content">
+              <h3>Virtual Credit Card</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
+            </div>
+            <i class="bi bi-chevron-right"></i>
+          </div>
+        </div>
+        <div class="col-7">
+          <img src="image/Screenshot_21.jpg">
+        </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class=" col-md-4 repo">
-            <div class="row">
-              <div class="col-md-3">
-                <img src="image/Screenshot_32.jpg">
-              </div>
-              <div class="col-md-7">
-                <h3>Monthly Report</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-              </div>
+    </div>
+  </section>
+
+  <!-- Featured Product Section -->
+  <section class="lp-products">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <h3>Products</h3>
+          <h2>Our Featured Products</h2>
+          <p>Ipsum dolor sit amet, consectetur adipising elit. Aliquam risus scelerisque condimentum ridiculus
+            etiam
+            here to solve ipsum dolor</p>
+        </div>
+      </div>
+    </div>
+    <!--Slider cards-->
+    <div class="container">
+      <div class="row lp-featured-products">
+        <div class="col-3 card">
+          <div class="card carousel-cards">
+            <img src="image/Screenshot_50.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Name of the product</h5>
+              <p class="card-text">Ipsum dolor sit amet, consectetur adipising elit. Aliquam risus
+                scelerisque</p>
+              <a href="#" class="read-more text-decoration-none fw-medium h4">READ MORE</a>
+              <i class="bi bi-arrow-right fa-2x"></i>
             </div>
           </div>
-          <div class=" col-md-4 serv">
-            <div class="row">
-              <div class="col-md-3">
-                <img src="image/Screenshot_33.jpg">
-              </div>
-              <div class="col-md-7">
-                <h3>24/7 customer service</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-              </div>
+        </div>
+        <div class="col-3 card">
+          <div class="card carousel-cards">
+            <img src="image/Screenshot_51.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Name of the product</h5>
+              <p class="card-text">Ipsum dolor sit amet, consectetur adipising elit. Aliquam risus
+                scelerisque</p>
+              <a href="#" class="read-more text-decoration-none fw-medium h4">READ MORE</a>
+              <i class="bi bi-arrow-right fa-2x"></i>
             </div>
           </div>
-          <div class=" col-md-4 plan">
-            <div class="row">
-              <div class="col-md-3">
-                <img src="image/Screenshot_34.jpg">
-              </div>
-              <div class="col-md-7">
-                <h3>Planning consulation</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-              </div>
+        </div>
+        <div class="col-3 card">
+          <div class="card carousel-cards">
+            <img src="image/Screenshot_52.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Name of the product</h5>
+              <p class="card-text">Ipsum dolor sit amet, consectetur adipising elit. Aliquam risus
+                scelerisque</p>
+              <a href="#" class="read-more text-decoration-none fw-medium h4">READ MORE</a>
+              <i class="bi bi-arrow-right fa-2x"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card carousel-cards">
+            <img src="image/Screenshot_53.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Name of the product</h5>
+              <p class="card-text">Ipsum dolor sit amet, consectetur adipising elit. Aliquam risus
+                scelerisque</p>
+              <a href="#" class="read-more text-decoration-none fw-medium h4">READ MORE</a>
+              <i class="bi bi-arrow-right fa-2x"></i>
             </div>
           </div>
         </div>
       </div>
-      </div>
-      <div class="container lp-more-services ">
-        <div class="row">
-          <div class="col-5 ">
-            <div class="d-flex pb-4">
-              <div class=" qr-payment pt-2 ">
-                <img src="image/Screenshot_36.jpg" alt="qr-payment">
-              </div>
-              <div class=" qr-content">
-                <h3>QR Payment</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
-              </div>
-              <i class="bi bi-chevron-right"></i>
+    </div>
+  </section>
+  <!-- Testimonial Section -->
+  <section class="lp-testimonial">
+    <div class="tesimonial-topic fw-bold">
+      <h4>Testimonial</h4>
+      <h2>What our client says about us</h2>
+    </div>
+    <div class="container">
+      <div class="row testimonial-content">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-4">
+              <img src="image/lady.png" alt="lady">
+
             </div>
-            <div class="d-flex pb-5">
-              <div class=" trading ">
-                <img src="image/Screenshot_37.jpg" alt="trading">
+            <div class="col-6 ">
+              <div class="testimonial-ratings">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
               </div>
-              <div class="trading-content ">
-                <h3>Trading Portal</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
-              </div>
-              <i class="bi bi-chevron-right"></i>
+              <p>"So I don't need to use many cards including credit cards, just with one
+                account I can make
+                multiple
+                payments. Very suitable for me who doesnt like complicated things just for payment. I
+                love"
+              </p>
+              <h3>Lusi Maria</h3>
+              <h5>Content Creator</h5>
             </div>
-            <div class="d-flex pb-6">
-              <div class="credit-card">
-                <img src="image/Screenshot_38.jpg" alt="virtual credit card">
-              </div>
-              <div class="credit-card-content">
-                <h3>Virtual Credit Card</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
-              </div>
-              <i class="bi bi-chevron-right"></i>
-            </div>
-          </div>
-          <div class="col-7">
-            <img src="image/Screenshot_21.jpg">
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Featured Product Section -->
-    <section class="featured-products">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2>Featured Products</h2>
+        <div class="col-12">
+          <div class="row">
+            <div class="col-4 testimonial-slider">
+              <img src="image/lady.png" alt="lady">
+            </div>
+            <div class="col-6 ">
+              <div class="testimonial-ratings">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p>"So I don't need to use many cards including credit cards, just with one
+                account I can make
+                multiple
+                payments. Very suitable for me who doesnt like complicated things just for payment. I
+                love"
+              </p>
+              <h3>Lusi Maria</h3>
+              <h5>Content Creator</h5>
+            </div>
           </div>
         </div>
-        <div class="row slider">
-          <div class="col-md-3">
-            <img class="card-img-top" src="image/Screenshot_50.jpg" alt="Card image cap">
-            <h5 class="title">Product 1</h5>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut felis ac mi malesuada cursus ac sit amet quam.</p>
-            <a href="#" class="btn btn-primary">READ MORE</a>
-          </div>
-          <div class="col-md-3">
-            <div class="card">
-              <img class="card-img-top" src="image/Screenshot_51.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Product 2</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut felis ac mi malesuada cursus ac sit amet quam.</p>
-                <a href="#" class="btn btn-primary">READ MORE</a>
-              </div>
+        <div class="col-12">
+          <div class="row">
+            <div class="col-4 testimonial-slider">
+              <img src="image/lady.png" alt="lady">
             </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card">
-              <img class="card-img-top" src="image/Screenshot_52.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Product 3</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut felis ac mi malesuada cursus ac sit amet quam.</p>
-                <a href="#" class="btn btn-primary">READ MORE</a>
+            <div class="col-6 ">
+              <div class="testimonial-ratings">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
               </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card">
-              <img class="card-img-top" src="image/Screenshot_53.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Product 4</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut felis ac mi malesuada cursus ac sit amet quam.</p>
-                <a href="#" class="btn btn-primary">READ MORE</a>
-              </div>
+              <p>"So I don't need to use many cards including credit cards, just with one
+                account I can make
+                multiple
+                payments. Very suitable for me who doesnt like complicated things just for payment. I
+                love"
+              </p>
+              <h3>Lusi Maria</h3>
+              <h5>Content Creator</h5>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+  <!-- FAQS Section -->
+  <h1>FAQS</h1>
+  <div class="accordion fq-accordion" id="accordionExample">
+    <div class="accordion-item fq-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button
+          class="accordion-button"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseOne"
+          aria-expanded="true"
+          aria-controls="collapseOne"
+        >
+          01 This is the main title of second number faq
+        </button>
+      </h2>
+      <div
+        id="collapseOne"
+        class="accordion-collapse collapse show"
+        aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          This is the first item's accordion body.It is
+          shown by default, until the collapse plugin adds the appropriate
+          classes that we use to style each element.
+          
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item fq-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseTwo"
+          aria-expanded="false"
+          aria-controls="collapseTwo"
+        >
+          02 This is the main title of second number faq
+        </button>
+      </h2>
+      <div
+        id="collapseTwo"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingTwo"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          <strong>This is the second item's accordion body.</strong> It is
+          hidden by default, until the collapse plugin adds the appropriate
+          classes that we use to style each element. These classes control the
+          overall appearance, as well as the showing and hiding via CSS
+          transitions. You can modify any of this with custom CSS or
+          overriding our default variables. It's also worth noting that just
+          about any HTML can go within the <code>.accordion-body</code>,
+          though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item fq-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseThree"
+          aria-expanded="false"
+          aria-controls="collapseThree"
+        >
+          03 This is the main title of second number faq
+        </button>
+      </h2>
+      <div
+        id="collapseThree"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingThree"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          <strong>This is the third item's accordion body.</strong> It is
+          hidden by default, until the collapse plugin adds the appropriate
+          classes that we use to style each element. These classes control the
+          overall appearance, as well as the showing and hiding via CSS
+          transitions. You can modify any of this with custom CSS or
+          overriding our default variables. It's also worth noting that just
+          about any HTML can go within the <code>.accordion-body</code>,
+          though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item fq-item">
+      <h2 class="accordion-header" id="headingfour">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsefour"
+          aria-expanded="false"
+          aria-controls="collapsefour"
+        >
+          04 This is the main title of second number faq
+        </button>
+      </h2>
+      <div
+        id="collapsefour"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingfour"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          <strong>This is the second item's accordion body.</strong> It is
+          hidden by default, until the collapse plugin adds the appropriate
+          classes that we use to style each element. These classes control the
+          overall appearance, as well as the showing and hiding via CSS
+          transitions. You can modify any of this with custom CSS or
+          overriding our default variables. It's also worth noting that just
+          about any HTML can go within the <code>.accordion-body</code>,
+          though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item fq-item">
+      <h2 class="accordion-header" id="headingfive">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsefive"
+          aria-expanded="false"
+          aria-controls="collapsefive"
+        >
+          05 This is the main title of second number faq
+        </button>
+      </h2>
+      <div
+        id="collapsefive"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingfive"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          <strong>This is the second item's accordion body.</strong> It is
+          hidden by default, until the collapse plugin adds the appropriate
+          classes that we use to style each element. These classes control the
+          overall appearance, as well as the showing and hiding via CSS
+          transitions. You can modify any of this with custom CSS or
+          overriding our default variables. It's also worth noting that just
+          about any HTML can go within the <code>.accordion-body</code>,
+          though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- <div class="accordion-body">
+      <div class="accordion">
+        <h1>FAQS</h1>
+        
+        <div class="container lp-accordian">
+          <div class="label">01 This is the main title of second number faq</div>
+          <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        </div>
+        
+        <div class="container lp-accordian">
+          <div class="label">02 This is the main title of second number faq</div>
+          <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </div>
+        </div>
       
-    </section>
-    <!-- Testimonial Section -->
-    <section class="testimonial">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2>Testimonials</h2>
-            <h2>What our client says about you</h2>
+        <div class="container lp-accordian">
+          <div class="label">03 This is the main title of second number faq</div>
+          <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </div>
         </div>
+        
+        <div class="container lp-accordian">
+          <div class="label">04 This is the main title of second number faq</div>
+          <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+        </div>
+        
+        <div class="container lp-accordian">
+          <div class="label">05 This is the main title of second number faq</div>
+          <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        </div>
+        
+        <div class="container lp-accordian">
+          <div class="label">06 This is the main title of second number faq</div>
+          <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </div>
+        </div>
+        
+      </div>
+    </div> -->
+  </section>
+  <!-- Footer Section -->
+  <section class="footer-content">
+    <div class="container">
         <div class="row">
-          <div class="col-md-8">
-            <div class="card">
-              <div class="card-body">
-                <img src="image/Screenshot_63-removebg-preview.png">
-                <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut felis ac mi malesuada cursus ac sit amet quam."</p>
-                <p class="card-text">
-                  <small class="text-muted">Lusi Maria, content creator</small>
-                </p>
-              </div>
+            <div class="col-4">
+                <h2>Smar<span>Tech</span></h2>
             </div>
-          </div>
+            <div class="col-8 justify-content-end footer-services">
+                <ul>
+                    <li><a href="#">Our Fees</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Reviews</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </section>
-    <!-- FAQS Section -->
-    <section class="faqs">
-      <div class="container">
+    </div>
+    <div class="container footer-below">
         <div class="row">
-          <div class="col-md-12">
-            <h2>Frequently Asked Questions</h2>
-          </div>
+            <div class="col-4">
+                <ul>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="col-8 justify-content-end social-media-links ">
+                <ul>
+                    <li><a href="#"> <i class="bi bi-twitter"></i></a></li>
+                    <li> <a href="#"> <i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#"> <i class="bi bi-instagram"></i></a></li>
+                    <li> <a href="#"> <i class="bi bi-linkedin"></i></a></li>
+                </ul>
+            </div>
         </div>
-        <div class="row">
-          <div class="col-md-6">
-            <h4>Question 1</h4>
-            <p>Answer 1</p>
-          </div>
-          <div class="col-md-6">
-            <h4>Question 2</h4>
-            <p>Answer 2</p>
-          </div>
-          <div class="col-md-6">
-            <h4>Question 3</h4>
-            <p>Answer 3</p>
-          </div>
-          <div class="col-md-6">
-            <h4>Question 4</h4>
-            <p>Answer 4</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Footer Section -->
-    <footer class="footer">
-      <div class="container"></div>
-    </footer>
+    </div>
+</section>
 
-  <script type="text/javascript" src="script.js"></script> 
 
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+
+
+
+
+
+
+   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
-          
+    <script type="text/javascript" src="script.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/f497bfad19.js" crossorigin="anonymous"></script> -->
+    <script>
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+  </script>
+</body>
 
-  </body>
 </html>
