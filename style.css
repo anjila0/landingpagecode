@@ -72,17 +72,21 @@
   }
 }
 
-/* colour setup */
+/* colour setup ================================*/
 :root {
   --primary: #038154;
   --primary-dark: #047750;
   --primary-light: #70b09a;
   --white: #ffffff;
   --yellow: #fef661;
-  --black: #383c3b;
+  --light-gray: #808080;
+  --gray: #383c3b;
+  --black: #000000;
 }
+
+/* Navbar section started here ================================================*/
 .navbar-brand span {
-  color: #038154;
+  color: var(--primary);
   position: relative;
   font-size: 30px;
   text-decoration: none;
@@ -91,7 +95,7 @@
   letter-spacing: 1px;
 }
 .nav-item span {
-  color: #047750;
+  color: var(--primary-dark);
 }
 .lp-navigation-bar img {
   position: absolute;
@@ -108,8 +112,8 @@
   color: var(--black);
 }
 .nav-item {
-  color: #0000;
-  background: #ffff;
+  color: var(--black);
+  background: var(--white);
   text-decoration: none;
   font-weight: 500;
   letter-spacing: o;
@@ -138,7 +142,7 @@ h3 {
   font-family: "architype_demi";
 }
 .inktelligent h3 {
-  color: #038154;
+  color: var(--primary);
   margin: top;
   padding: 20px;
   font-family: "architype_demi";
@@ -148,24 +152,14 @@ h3 {
   font-weight: 500;
   font-family: "tw_cen_Rg";
 }
-.button {
-  background-color: var(--primary-dark);
-  color: white;
-  width: 11.25em;
-  height: 3.25em;
-  border-radius: 10px;
-  text-align: center;
-}
-.button-first {
-  display: flex;
-}
+
 .learn-more-button {
-  background-color: #038154;
-  color: #ffffff;
+  background-color: var(--primary);
   border-radius: 10px;
   block-size: 40px;
   border: none;
   margin: 0 0 20px 0;
+  text-decoration: none;
 }
 .future h5 {
   font-family: "architype_demi";
@@ -193,11 +187,11 @@ h3 {
   font-family: "tw_cen_mt_stdbold";
   font-size: medium;
   font-weight: 600;
-  border-top: 2px solid #038154;
+  border-top: 2px solid var(--primary);
 }
 .horizontal-line-1 h5,
 .horizontal-line-2 h5 span {
-  color: #038154;
+  color: var(--primary);
 }
 
 .horizontal-line-2 {
@@ -222,7 +216,7 @@ h3 {
 .aboutus h3 {
   font-family: "architype_medium";
   text-align: center;
-  color: #ffffff;
+  color: var(--white);
   margin: 5px;
   padding: 20px;
   font-style: normal;
@@ -237,7 +231,7 @@ h3 {
   font-weight: 600;
   font-size: 32px;
   line-height: 38px;
-  color: #ffffff;
+  color: var(--white);
 }
 .aboutus .para2 {
   font-family: "tw_cen_Rg";
@@ -245,7 +239,7 @@ h3 {
   font-weight: 400;
   font-size: 16px;
   line-height: 17px;
-  color: #ffffff;
+  color: var(--white);
 }
 .call-to-action .img1 {
   position: absolute;
@@ -259,7 +253,7 @@ h3 {
   bottom: 0;
 }
 .green {
-  color: #03724d;
+  color: var(--primary);
 }
 .packages {
   margin: 60px 0 60px 0;
@@ -278,7 +272,8 @@ h3 {
   padding: 100px 0;
 }
 .package-paragraph span {
-  color: #038154;
+  color: var(--primary);
+  cursor: pointer;
 }
 .package-paragraph h2 {
   margin-top: 150px;
@@ -290,6 +285,7 @@ h3 {
 .firstPackage:hover,
 .package .secondPackage:hover {
   background-color: var(--primary-dark);
+  cursor: pointer;
 }
 .secondPackage:hover h2,
 .secondPackage:hover h3,
@@ -297,15 +293,15 @@ h3 {
 .firstPackage:hover h2,
 .firstPackage:hover h3,
 .firstPackage:hover p {
-  color: white;
+  color: var(--white);
 }
 .firstPackage:hover .btn-get-started,
 .secondPackage:hover .btn-get-started {
-  background-color: white;
+  background-color: var(--white);
   color: var(--primary-dark);
 }
 
-/* for the light bulb icon ============== */
+/* for the light bulb icon ================================== */
 .package .icon-bg {
   color: var(--light-green);
   background-color: #daebe4;
@@ -332,7 +328,7 @@ h3 {
   font-family: "tw_cen_Rg";
   font-size: 15px;
   font-weight: 400px;
-  color: grey;
+  color: var(--light-gray);
 }
 .firstPackage h3 span,
 .secondPackage h3 span {
@@ -344,8 +340,8 @@ h3 {
   font-weight: 700;
 }
 .button-first-getStarted button {
-  background-color: #038154;
-  color: white;
+  background-color: var(--primary);
+  color: var(--white);
   width: 11.25em;
   height: 3.25em;
   border-radius: 10px;
@@ -355,8 +351,8 @@ h3 {
 }
 
 .button-second-getStarted button {
-  background-color: #038154;
-  color: white;
+  background-color: var(--primary);
+  color: var(--white);
   width: 11.25em;
   height: 3.25em;
   border-radius: 10px;
@@ -365,29 +361,29 @@ h3 {
   border: none;
 }
 .package .secondPackage {
-  background-color: white;
+  background-color: var(--white);
   margin-top: 50px;
   border-radius: 5%;
   padding: 20px;
   font-family: "tw_cen_Rg";
   font-size: 15px;
   font-weight: 400;
-  color: grey;
+  color: var(--light-gray);
 }
 .secondPackage h2 {
-  color: black;
+  color: var(--black);
   margin-top: 20px;
   font-family: "architype_medium";
   font-size: 28px;
   font-weight: 700px;
 }
 .secondPackage h3 {
-  color: black;
+  color: var(--black);
   font-size: 38px;
   font-weight: 700;
 }
 .secondPackage p {
-  color: grey;
+  color: var(--gray);
   font-family: "tw_cen_Rg";
 }
 .diamond {
@@ -402,7 +398,7 @@ h3 {
   left: 0;
 }
 
-/* About us section started */
+/* About us section started =====================================*/
 
 .about-us {
   padding: 5px;
@@ -413,7 +409,7 @@ h3 {
 .about-us h3 span {
   padding: 5px;
   margin: 30px;
-  color: #038154;
+  color: var(--primary);
   font-family: "architype_medium";
   font-style: normal;
   font-weight: 600;
@@ -426,7 +422,7 @@ h3 {
   font-weight: 400;
   font-size: 14px;
   line-height: 15px;
-  color: grey;
+  color: var(--light-gray);
 }
 .about-us p span {
   font-family: "tw_cen_mt_stdregular";
@@ -449,19 +445,32 @@ h3 {
 .lp-card {
   padding: 2px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border-bottom: gray;
+  border-bottom: var(--light-gray);
   border-radius: 20px;
+  cursor: pointer;
 }
 .lp-card1 {
-  background: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   border: 1px solid rgba(56, 60, 59, 0.1);
   border-radius: 20px;
+
   margin: 9px;
+  cursor: pointer;
 }
 .qr-content {
   text-align: left;
   padding: 10px;
   margin: 5px;
+}
+.lp-card:hover {
+  background-color: var(--primary-dark);
+}
+.lp-card1:hover {
+  background-color: var(--primary-dark);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-bottom: var(--light-gray);
+  border-radius: 20px;
+  padding: 2px;
 }
 
 .trading-content {
@@ -477,9 +486,11 @@ h3 {
 .lp-card img {
   align-items: center;
 }
+
 .lp-card1 img {
   align-items: center;
 }
+
 .qr-payment {
   padding: 5px;
 }
@@ -500,20 +511,20 @@ h3 {
   padding: 20px;
 }
 
-/* Featured Product Section */
+/* Featured Product Section =============================*/
 
 .flex {
-  background-color: #038154;
+  background-color: var(--primary);
 }
 
 .lp-products {
   margin-top: 9em;
 }
 .lp-products h3 {
-  color: #038154;
+  color: var(--primary);
 }
 .lp-products p {
-  color: black;
+  color: var(--black);
 }
 .lp-products h2 {
   font-size: 38px;
@@ -524,21 +535,21 @@ h3 {
   font-weight: 500;
 }
 .lp-featured-products .read-more {
-  color: #038154;
+  color: var(--primary);
   font-size: 22px;
   font-family: tw_bold;
 }
 .lp-featured-products i {
-  color: #038154;
+  color: var(--primary);
 }
 .lp-featured-products .carousel-card {
-  /* width: 18rem; */
   border: 0;
   border-radius: 20px;
   margin: 0 15px;
+  cursor: pointer;
 }
 .slick-current .carousel-card {
-  background: #ffffff;
+  background: var(--white);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .lp-testimonial .slick-slider .slick-prev,
@@ -559,12 +570,10 @@ h3 {
 .carousel-card img {
   border-radius: 50px;
   padding: 8px;
-  /* width: 285px;
-  height: 200px; */
   border: 0;
 }
 .slider-container .slick-prev:before {
-  color: white !important;
+  color: var(--white) !important;
   content: "\f178";
   font-family: "bootstrap-icon" !important;
   background-color: #03724d;
@@ -572,7 +581,7 @@ h3 {
   border-radius: 10px;
 }
 .slider-container .slick-next:before {
-  color: #038154 !important;
+  color: var(--primary) !important;
   content: "\f178";
   font-family: "bootstrap-icon" !important;
   border: 2px solid #f6f6f5 !important;
@@ -583,15 +592,18 @@ h3 {
 .slider-container .slick-next {
   left: 16px !important;
 }
+.btn .btn-success :hover {
+  color: var(--primary-dark);
+}
 
-/* testimonial section  */
+/* testimonial section=================================  */
 
 .lp-testimonial {
   margin-top: 200px;
 }
 .lp-testimonial h4 {
   text-align: center;
-  color: #038154;
+  color: var(--primary);
   left: 100px;
 }
 .lp-testimonial h2 {
@@ -600,7 +612,7 @@ h3 {
   font-size: 42px;
 }
 .testimonial-content {
-  background-color: #038154;
+  background-color: var(--primary) 4;
   border-radius: 35px;
 }
 .testimonial-content .slick-list {
@@ -609,14 +621,14 @@ h3 {
 }
 .testimonial-content p {
   margin-top: 30px;
-  color: white;
-  font-family: architype_regular;
+  color: var(--black);
+  font-family: "architype_regular";
   font-style: italic;
   word-spacing: 2px;
   font-size: 20px;
 }
 .testimonial-content i {
-  color: #fef661;
+  color: var(--yellow);
 }
 .testimonial-ratings {
   margin-top: 50px;
@@ -624,12 +636,15 @@ h3 {
 ul.slick-dots li button::before {
   font-size: 20px;
 }
+.lp-testimonial .slick-dots li.slick-active button:before {
+  color: #047b59;
+}
 .testimonial-content h3 {
-  color: white;
+  color: var(--white);
   margin-top: 50px;
 }
 .testimonial-content h5 {
-  color: white;
+  color: var(--white);
   font-size: 10px;
   letter-spacing: 2px;
 }
@@ -637,16 +652,19 @@ ul.slick-dots li button::before {
   margin-top: -150px;
   position: relative;
   z-index: 100;
-
   left: 0;
   overflow: visible !important;
+}
+.testimonial-container {
+  background-color: var(--primary);
+  border-radius: 25px;
 }
 .slick-prev:before {
   margin-left: -30px;
   opacity: 1 !important;
 }
 .slick-prev:before {
-  color: white !important;
+  color: var(--white) !important;
   content: "\f178";
   font-family: "fontawesome" !important;
   background-color: #03724d;
@@ -654,7 +672,7 @@ ul.slick-dots li button::before {
   border-radius: 10px;
 }
 .slick-next:before {
-  color: #038154 !important;
+  color: var(--primary) !important;
   content: "\f178";
   font-family: "fontawesome" !important;
   border: 2px solid #f6f6f5 !important;
@@ -665,10 +683,15 @@ ul.slick-dots li button::before {
 .slick-next {
   left: 16px !important;
 }
-/* FAQS section */
-.FAQS {
-  margin-top: 120px;
-  margin-left: 120px;
+.testimonial-quotes {
+  position: relative;
+  text-align: right;
+  top: -122px;
+  right: 54px;
+}
+/* FAQS section=============================================== */
+.faqs {
+  margin-left: 117px;
 }
 .accordion.fq-accordion .fq-item {
   border: 2px solid var(--primary-dark);
@@ -704,68 +727,12 @@ ul.slick-dots li button::before {
   font-family: "tw_cen_mt_stdbold";
 }
 .accordion-body {
-  background: white;
+  background: var(--white);
   font-size: 16px;
   width: 600px;
   font-family: "tw_cen_mt_stdbold";
   font-weight: 400;
 }
-
-/* .accordion-item {
-  width: 800px;
-  margin: 90px auto;
-  color: black;
-  background-color: white;
-  padding: 45px 45px;
-}
-.accordion-item {
-  position: relative;
-  margin: 30px;
-} */
-
-/* Positions the labels relative to the .container. Adds padding to the top and bottom and increases font size. Also makes its cursor a pointer */
-
-/* .accordion .label {
-  position: relative;
-  padding: 10px 0;
-  font-size: 30px;
-  color: black;
-  cursor: pointer;
-  font-family: "tw_cen_mt_stdbold";
-  font-size: 20px;
-} */
-/* .accordion .accordion-item .accordion-header .accordion-button::after {
-  background-image: none;
-  content: "icofont-plus-circle";
-
-  font-family: "bootstrap-icons";
-  color: var(--primary-dark);
-  float: right;
-  font-size: 30px;
-} */
-
-/* Hides the content (height: 0), decreases font size, justifies text and adds transition */
-
-/* .accordion .content {
-  position: relative;
-  background: white;
-  height: 0;
-  font-size: 16px;
-  text-align: justify;
-  width: 600px;
-  overflow: hidden;
-  transition: 0.5s;
-  font-family: "tw_cen_mt_stdbold";
-  font-weight: lighter;
-} */
-
-/* unhides the content part when active.sets the height */
-/* .accordion .container.active .content {
-  height: auto;
-} */
-
-/* Changes from plus sign to negative sign once active */
-
 .accordion .container.active .label::before {
   content: "bi-dash-circle";
   color: var(--primary-dark);
@@ -778,7 +745,7 @@ ul.slick-dots li button::before {
   color: var(--primary-dark);
 }
 
-/* Footer section started here */
+/* Footer section started here ========================================*/
 .footer-content {
   margin-top: 50px;
 }
@@ -790,7 +757,7 @@ ul.slick-dots li button::before {
   color: var(--primary-dark);
 }
 .footer-content ul li a {
-  color: black;
+  color: var(--black);
   text-decoration: none;
 }
 .footer-content ul li {
