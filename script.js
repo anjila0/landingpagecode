@@ -13,7 +13,7 @@ $(".slider").slick({
         arrows: false,
         centerMode: true,
         centerPadding: "40px",
-        slidesToShow: 3,
+        slidesToShow: 2,
       },
     },
     {
@@ -39,7 +39,7 @@ $(".lp-featured-products").slick({
         arrows: false,
         centerMode: true,
         centerPadding: "40px",
-        slidesToShow: 3,
+        slidesToShow: 2,
       },
     },
     {
@@ -56,7 +56,7 @@ $(".lp-featured-products").slick({
 
 $(".testimonial-content").slick({
   dots: true,
-  infinite: false,
+  infinite: true,
   speed: 300,
   slidesToShow: 1,
   slidesToScroll: 1,
