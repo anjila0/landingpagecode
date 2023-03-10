@@ -38,7 +38,7 @@ $(".lp-featured-products").slick({
       settings: {
         arrows: false,
         centerMode: true,
-        centerPadding: "40px",
+        centerPadding: "20px",
         slidesToShow: 2,
       },
     },
@@ -47,7 +47,7 @@ $(".lp-featured-products").slick({
       settings: {
         arrows: true,
         centerMode: true,
-        centerPadding: "40px",
+        centerPadding: "20px",
         slidesToShow: 1,
       },
     },

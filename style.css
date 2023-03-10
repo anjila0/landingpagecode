@@ -128,7 +128,12 @@ h3 {
   display: block;
   text-align: center;
 }
-
+@media only screen and (max-width: 768px) {
+  .lp-responsive-spacing {
+    padding: 20px 10px;
+    margin: 0px;
+  }
+}
 /*Banner-section start========================================================= */
 .banner-title {
   color: var(--dark-green);
@@ -152,14 +157,21 @@ h3 {
   font-family: "tw_cen_Rg";
 }
 
-.learn-more-button {
+.inktelligent .learn-more-button {
   background-color: var(--primary);
   border-radius: 10px;
-  block-size: 45px;
+  padding: 16px 10px;
+  margin-bottom: 50px;
+  block-size: 55px;
   width: 150px;
+  color: var(--white);
   border: none;
-  margin: 0 0 20px 0;
   text-decoration: none;
+  font-family: "architype_regular";
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-evenly;
 }
 .future h5 {
   font-family: "architype_demi";
@@ -206,16 +218,20 @@ h3 {
   font-weight: 300;
   margin-bottom: 70px;
 }
-@media screen and (max-width: 768px) {
-  .banner .col-md-6 {
+@media only screen and (max-width: 992px) {
+  .banner-section .col-md-6 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .banner-section .col-md-6 {
     width: 100%;
     text-align: center;
   }
-}
-@media only screen and (max-width: 768px) {
-  .lp-banner-section,
-  .lp-banner-description,
-  .lp-banner-heading {
+  .banner-section,
+  .inktelligent h3,
+  .inktelligent h1 {
     text-align: center;
   }
   .lp-horizontal-line-2 {
@@ -234,7 +250,6 @@ h3 {
 .call-to-action {
   background-color: #03724d;
   position: relative;
-  height: 350px;
   text-align: center;
 }
 .aboutus {
@@ -294,6 +309,12 @@ h3 {
   background-position: absolute;
   padding: 2px;
 }
+@media only screen and (max-width: 992px) {
+  .call-to-action .img1,
+  .img2 {
+    width: 70px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .call-to-action .img1,
   .img2 {
@@ -306,13 +327,13 @@ h3 {
   padding: 100px 0;
 }
 .about-us .abo .repo img {
-  width: 100%;
+  width: 40%;
 }
 .about-us .abo .serv img {
-  width: 100%;
+  width: 40%;
 }
 .about-us .abo .plan img {
-  width: 100%;
+  width: 40%;
 }
 .package-paragraph span {
   color: var(--primary);
@@ -342,16 +363,41 @@ h3 {
   background-color: var(--white);
   color: var(--primary-dark);
 }
+@media only screen and (max-width: 992px) {
+  .package .package-paragraph {
+    width: 100%;
+  }
+  .package-section-bg {
+    display: none;
+  }
+  .package .col-3 {
+    width: 45%;
+  }
+  .package .secondPackage {
+    width: 48%;
+  }
+}
 @media only screen and (max-width: 768px) {
-  .package .col-4 {
+  .lp-responsive-spacing {
+    padding: 20px 10px;
+    margin: 0;
+  }
+  .package .col-3,
+  .col-4 {
     width: 100%;
   }
   .package-section-bg img {
     display: none;
   }
-}
-
-@media only screen and (max-width: 768px) {
+  .package-paragraph {
+    text-align: center;
+    padding: 10px 0px;
+  }
+  .first-package,
+  .secondPackage {
+    text-align: center;
+    padding: 10px 0px;
+  }
   .package .col-3 {
     width: 50%;
   }
@@ -428,7 +474,9 @@ h3 {
   font-family: "tw_cen_Rg";
   font-size: 15px;
   font-weight: 400;
-  color: var(--light-gray);
+  border-color: var(--light-gray);
+  -webkit-box-shadow: 4px 3px 13px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 4px 3px 13px 0px rgba(0, 0, 0, 0.4);
 }
 .secondPackage h2 {
   color: var(--black);
@@ -573,12 +621,47 @@ h3 {
 }
 
 @media only screen and (max-width: 768px) {
+  .lp-responsive-spacing {
+    padding: 20px 10px;
+    margin: 0;
+  }
   .lp-more-services .col-5 {
     width: 100%;
   }
+  .lp-more-services {
+    margin-top: -20px;
+  }
 }
 @media only screen and (max-width: 576px) {
+  h3 {
+    font-size: 28px !important;
+    font-weight: 700 !important;
+  }
+  .h2 {
+    font-size: 36px !important;
+    line-height: 48px !important;
+  }
   .lp-more-services .col-7 {
+    width: 100%;
+  }
+  .about-us .abo .plan img {
+    width: 35%;
+  }
+  .about-us .abo .serv img {
+    width: 35%;
+  }
+  .about-us .abo .repo img {
+    width: 35%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .about-us .abo .plan img {
+    width: 100%;
+  }
+  .about-us .abo .serv img {
+    width: 100%;
+  }
+  .about-us .abo .repo img {
     width: 100%;
   }
 }
@@ -597,10 +680,7 @@ h3 {
 .lp-products {
   margin-top: 9em;
 }
-.lp-products .col-6 {
-  text-align: center;
-  margin-inline: 137px;
-}
+
 .lp-products h3 {
   color: var(--primary);
 }
@@ -676,6 +756,33 @@ h3 {
 .btn .btn-success :hover {
   color: var(--primary-dark);
 }
+@media screen and (max-width: 768px) {
+  .lp-products {
+    margin-top: -16px;
+  }
+  .lp-responsive-spacing {
+    padding: 20px 10px;
+    margin: 0;
+  }
+  .lp-products h3,
+  h2,
+  p {
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+@media screen and (-max-width: 576px) {
+  .lp-products h3 {
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    text-align: center;
+  }
+  .lp-products h2 {
+    font-size: 36px !important;
+    line-height: 48px !important;
+    text-align: center;
+  }
+}
 
 /* testimonial section=================================  */
 
@@ -713,7 +820,7 @@ h3 {
 }
 .testimonial-ratings {
   margin-top: 50px;
-  margin-inline-start: 80px;
+  margin-inline-start: 60px;
 }
 ul.slick-dots li button::before {
   font-size: 20px;
@@ -779,21 +886,39 @@ ul.slick-dots li button::before {
     margin-inline-start: 75px;
   }
   .lp-testimonial h2 {
-    margin-inline-start: 350px;
     font-size: 21px;
+  }
+  .testimonial-content {
+    padding-left: 20px;
   }
 }
 @media only screen and (max-width: 992px) {
   .testimonial-content .col-4 {
     width: 100%;
   }
+  .lp-testimonial h4 {
+    position: relative;
+    top: -124px;
+  }
 }
-
-.testimonial-quotes img {
-  width: 100px;
-  position: relative;
-  top: 37px;
-  right: 11px;
+@media only screen and (max-width: 992px) {
+  .lp-testimonial h2 {
+    margin-inline-start: 251px;
+    position: relative;
+    top: -122px;
+  }
+  .testimonial-quotes img {
+    width: 100px;
+    position: relative;
+    top: 37px;
+    right: -62px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .lp-testimonial h2 {
+    font-size: 36px !important;
+    line-height: 48px !important;
+  }
 }
 
 /* FAQS section=============================================== */
@@ -851,6 +976,22 @@ ul.slick-dots li button::before {
 .accordion .container.active .label {
   color: var(--primary-dark);
 }
+@media screen and (max-width: 768px) {
+  .faqs h1 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .faqs h1 {
+    font-size: 36px !important;
+    line-height: 48px !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .accordion .fq-accordion .accordion-item {
+    width: 100%;
+  }
+}
 
 /* Footer section started here ========================================*/
 .footer-content {
@@ -900,4 +1041,17 @@ ul.slick-dots li button::before {
 }
 .social-media-links ul li {
   list-style-type: none;
+}
+@media screen and (max-width: 768px) {
+  .footer-content h2 {
+    text-align: center;
+  }
+  .footer-content .footer-services {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer-content h2 {
+    font-size: 36px !important;
+  }
 }
